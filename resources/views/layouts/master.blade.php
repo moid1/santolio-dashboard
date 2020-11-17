@@ -9,6 +9,7 @@
 
   <title>{{ config('app.name', 'Laravel') }}</title>
   
+  <link rel="icon" href="images/custom_images/lungwo.png" type="image/gif" sizes="16x16">
 
   <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
@@ -44,7 +45,7 @@
     <!-- Brand Logo -->
     <router-link to="/dashboard" class="brand-link">
     <div class="w-100 text-center justify-content-center  d-flex">
-      <img src="{{ asset('/images/custom_images/santlogo1.jpg') }}"  alt="The Logo" class="brand-image text-center"
+      <img src="{{ asset('/images/custom_images/lungwo.png') }}" style="width:90px" alt="The Logo" class=" text-center"
          >
          </div>
  
@@ -107,11 +108,11 @@
   {{-- /.content-wrapper --}}
 
   {{-- Main Footer --}}
-  <footer class="main-footer text-center" style="background:#A6B685">         
+  <footer class="main-footer bg-black text-center" >         
     <strong>Copyright &copy; 2020
-    <a style="color:#A6B685;text-decoration:none" href="https://santolio.co.uk">  santolio.co.uk</a>.</strong> All rights reserved.
+    <a style="color:#8867AC;text-decoration:none" href="https://santolio.co.uk"> Luna Wellbeing</a>.</strong> All rights reserved.
     <br>
-    Designed Developed & Managed By<strong><a style="color:#A6B685;text-decoration:none" href="https://nglobals.com"> Nawal Global Systems </a></strong>
+    Designed & Developed By<strong><a style="color:aqua;text-decoration:none" href="https://nglobals.com"> Nawal Global Systems </a></strong>
 </div>
 {{-- ./wrapper --}}
 

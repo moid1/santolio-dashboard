@@ -23,6 +23,9 @@ Auth::routes(['verify' => true]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('home', function () {
+    if(Auth::User()->type=='admin')
+    return redirect('/admin-dashboard');
+    else
     return redirect('/dashboard');
 });
 

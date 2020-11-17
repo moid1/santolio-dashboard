@@ -2,10 +2,11 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center mt-5">
+    <div class="row justify-content-center mt-3">
         <div class="col-md-6">
-            <div class="card " style="background:#fff;border-color:none;">
-                <div class="card-header text-center" style="background:#A6B685">
+        <h3 class="text-center" style="font-weight:bold;color:#8b64aa">Welcome to  Luna Wellbeing</h3>
+            <div class="card mt-3" style="background:#fff;border-color:none;">
+                <div class="card-header text-center" style="background:#8b64aa ">
                 <h2 style="color:#fff;font-weight:bold;  ">Login</h2>
                 </div>
 
@@ -56,16 +57,19 @@
 
                         <div class="form-group  ">
                             <div class="col-md-8 offset-md-2 text-center">
-                                <button type="submit" class="btn btn-primary w-50" style="background:#A6B685;border:none">
+                                <button type="submit" class="btn btn-primary w-50" style="background:#8b64aa ;border:none">
                                     {{ __('Login') }}
                                 </button>                    
-                        </div>
+                            </div>
 
                         
                     </form>
                 </div>
             </div>
+            
         </div>
+     
     </div>
+   
 </div>
 @endsection
