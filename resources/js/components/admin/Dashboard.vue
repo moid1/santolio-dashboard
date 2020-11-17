@@ -69,7 +69,11 @@
           <!-- /.info-box -->
         </div>
         <!-- /.col -->
-        <h2>This is for admin</h2>
+        <div
+          class="w-100 mt-5 text-center justify-content-center align-items-center"
+        >
+          <img src="images/custom_images/lungwo.png" width="30%" alt="" />
+        </div>
       </div>
       <!-- /.row -->
     </div>
