@@ -11,7 +11,7 @@
       @can('isAdmin')
       <li class="nav-item has-treeview">
         <a href="#" class="nav-link">
-          <i class="nav-icon fas fa-cog green"></i>
+          <i class="nav-icon fas fa-money-bill green"></i>
           <p>
             Financials
             <i class="right fas fa-angle-left"></i>
@@ -21,7 +21,7 @@
 
           <li class="nav-item">
             <router-link to="/product/category" class="nav-link">
-              <i class="nav-icon fas fa-list-ol green"></i>
+              <i class="nav-icon  fa fa-book" aria-hidden="true"></i>
               <p>
                 Sales
               </p>
@@ -29,7 +29,7 @@
           </li>
           <li class="nav-item">
             <router-link to="/product/tag" class="nav-link">
-              <i class="nav-icon fas fa-tags green"></i>
+              <i class="nav-icon fa fa-bars" aria-hidden="true"></i>
               <p>
                 Report
               </p>
@@ -38,7 +38,7 @@
           
             <li class="nav-item">
               <router-link to="/developer" class="nav-link">
-                  <i class="nav-icon fas fa-cogs white"></i>
+                <i class="nav-icon fa fa-address-card" aria-hidden="true"></i>
                   <p>
                       Affilates Commission Report
                   </p>
@@ -46,8 +46,55 @@
             </li>
         </ul>
       </li>
-
       @endcan
+
+    
+      @can('isAdmin')
+        <li class="nav-item">
+          <router-link to="/users" class="nav-link">
+            <i class="fa fa-users nav-icon blue"></i>
+            <p>View Affiliates</p>
+          </router-link>
+        </li>
+      @endcan
+      @can('isAdmin')
+      <li class="nav-item has-treeview">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fa fa-upload" aria-hidden="true"></i>
+            Upload
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+
+          <li class="nav-item">
+            <router-link to="/product/category" class="nav-link">
+              <i class="nav-icon fa fa-file-image" aria-hidden="true"></i>
+              <p>
+                Media
+              </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/product/tag" class="nav-link">
+              <i class="nav-icon fa fa-file" aria-hidden="true"></i>
+              <p>
+                Legal Document
+              </p>
+            </router-link>
+          </li>
+        
+        </ul>
+      </li>
+      @endcan
+      @can('isAdmin')
+      <li class="nav-item">
+        <router-link to="/users" class="nav-link">
+          <i class="fa fa-users nav-icon blue"></i>
+          <p>Users</p>
+        </router-link>
+      </li>
+    @endcan  
       @can('isUser')
       <li class="nav-item">
         <router-link to="/products" class="nav-link">
@@ -58,15 +105,6 @@
         </router-link>
       </li>
       @endcan
-      @can('isAdmin')
-        <li class="nav-item">
-          <router-link to="/users" class="nav-link">
-            <i class="fa fa-users nav-icon blue"></i>
-            <p>Users</p>
-          </router-link>
-        </li>
-      @endcan
-
       
 
       {{-- @can('isAdmin')

@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" enctype="multipart/form-data" action="{{ route('register') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -62,6 +62,14 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Choose Profile Picture') }}</label>
+
+                            <div class="col-md-6">
+                                <input style="background:none;border:none" id="photo" type="file" class="form-control white" name="photo" required >
+                            </div>
+                        </div>
+
 
                         <div class="form-group ">
                             <div class="col-md-8 offset-md-2 text-center">
