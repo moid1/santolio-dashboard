@@ -1,4 +1,16 @@
 {
     "/js/app.js": "/js/app.js",
+<<<<<<< Updated upstream
     "/css/app.css": "/css/app.css"
+=======
+    "/css/app.css": "/css/app.css",
+    "/js/app.503238b236cfe847cf84.hot-update.js": "/js/app.503238b236cfe847cf84.hot-update.js",
+    "/js/app.2b592d6f1bcba15aa087.hot-update.js": "/js/app.2b592d6f1bcba15aa087.hot-update.js",
+    "/js/app.25f37c8521adbcbea729.hot-update.js": "/js/app.25f37c8521adbcbea729.hot-update.js",
+    "/js/app.6b62d9ff7cbcb42c8fcc.hot-update.js": "/js/app.6b62d9ff7cbcb42c8fcc.hot-update.js",
+    "/js/app.7bfdf87fc8a8fe6833e8.hot-update.js": "/js/app.7bfdf87fc8a8fe6833e8.hot-update.js",
+    "/js/app.715ac6f0ab2d0d72243e.hot-update.js": "/js/app.715ac6f0ab2d0d72243e.hot-update.js",
+    "/js/app.d5967d587592ad6d89bc.hot-update.js": "/js/app.d5967d587592ad6d89bc.hot-update.js",
+    "/js/app.df868fa70e5b1f8e1e06.hot-update.js": "/js/app.df868fa70e5b1f8e1e06.hot-update.js"
+>>>>>>> Stashed changes
 }

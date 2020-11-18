@@ -163,8 +163,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        JamesDordoy\LaravelVueDatatable\Providers\LaravelVueDatatableServiceProvider::class,
-
 
         /*
          * Package Service Providers...
