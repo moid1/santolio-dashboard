@@ -40,7 +40,7 @@
               <router-link to="/developer" class="nav-link">
                 <i class="nav-icon fa fa-address-card" aria-hidden="true"></i>
                   <p>
-                      Affilates Commission Report
+                      Affilates  Report
                   </p>
               </router-link>
             </li>
