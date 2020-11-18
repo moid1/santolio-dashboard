@@ -19,7 +19,7 @@ class User extends Authenticatable // implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'type'
+        'name', 'email', 'password', 'type', 'photo'
     ];
 
     /**
@@ -45,10 +45,10 @@ class User extends Authenticatable // implements MustVerifyEmail
      *
      * @return string
      */
-    public function getPhotoAttribute()
-    {
-        return 'https://www.gravatar.com/avatar/' . md5(strtolower($this->email)) . '.jpg?s=200&d=mm';
-    }
+    // public function getPhotoAttribute()
+    // {
+    //     return 'https://www.gravatar.com/avatar/' . md5(strtolower($this->email)) . '.jpg?s=200&d=mm';
+    // }
 
     public function roles()
     {
