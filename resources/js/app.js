@@ -8,9 +8,11 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 import moment from 'moment';
+import DataTable from 'laravel-vue-datatable';
 
 import { Form, HasError, AlertError } from 'vform';
 window.Form = Form;
+Vue.use(DataTable);
 
 import Gate from "./Gate";
 Vue.prototype.$gate = new Gate(window.user);

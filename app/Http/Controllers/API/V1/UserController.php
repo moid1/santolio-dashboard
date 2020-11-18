@@ -15,7 +15,7 @@ class UserController extends BaseController
      */
     public function __construct()
     {
-        $this->middleware('auth:api');
+        // $this->middleware('auth:api');
     }
 
     /**
@@ -25,9 +25,9 @@ class UserController extends BaseController
      */
     public function index()
     {
-        if (!\Gate::allows('isAdmin')) {
-            return $this->unauthorizedResponse();
-        }
+        // if (!\Gate::allows('isAdmin')) {
+        //     return $this->unauthorizedResponse();
+        // }
         // $this->authorize('isAdmin');
 
         $users = User::latest()->paginate(10);
